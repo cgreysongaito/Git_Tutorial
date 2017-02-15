@@ -2,3 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+*.aux
+*.pdf
+*.bbl
+*.blg
+*.log
