@@ -7,3 +7,7 @@
 *.bbl
 *.blg
 *.log
+*.gz
+data/
+figs/
+output/
