@@ -9,7 +9,4 @@
 *.log
 *.gz
 *.out
-data/
-figs/
-output/
 doc/rstudiogit_tutorial_Chrisnotes.tex

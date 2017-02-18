@@ -13,6 +13,28 @@
 \item Install Git (\href{https://git-scm.com/download/win}{Windows}, \href{https://git-scm.com/download/mac}{Mac}, \href{https://git-scm.com/download/linux}{Linux}
 \item Register for \href{https://github.com/join?source=header-home}{GitHub}
 \end{itemize}
+\section*{Benefits of Git and GitHub}
+\begin{itemize}
+\item \textbf{Git}
+\begin{itemize}
+\item Version Control your R scripts and your manuscripts
+\begin{itemize}
+\item No more saving your R scripts or your manuscripts with dates or version numbers at the end
+\item Can easily go back and forth between different edits
+\item All edits are kept and easily accessible but do not take up much data on your computer
+\end{itemize}
+\end{itemize}
+\item \textbf{GitHub}
+\begin{itemize}
+\item Publish your R scripts for your published papers
+\item Collaboration
+\begin{itemize}
+\item If there is useful code already written, you can copy it using GitHub and use it (as long as you cite it)
+\item Can collaborate with fellow scientists on R scripts or on manuscripts (doable with .docx, easier with .tex/.md)
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
 \section*{Basics of Git (Conceptual)}
 To explore Git we will go through \href{https://try.github.io/levels/1/challenges/1}{TryGit} together.
 
@@ -20,6 +42,7 @@ Other useful webpages on how git works:
 
 \url{http://r-bio.github.io/intro-git-rstudio/}
 \url{https://www.git-tower.com/blog/workflow-of-version-control}
+\url{http://nyuccl.org/pages/gittutorial/}
 
 
 \section*{Using Rstudio with Git}
@@ -32,12 +55,16 @@ Other useful webpages on how git works:
 \item Click on the Git button and then click on Commit (what about the stuff want to ignore)
 \item Click on .gitignore and then Ignore button to edit the .gitignore file
 \end{itemize}
+
+Tags (for publishing r scripts
 \url{https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN}
 \url{https://support.rstudio.com/hc/en-us/articles/200526207}
 \url{https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html}
 
 
 \section*{Collaborative R Scripts using GitHub}
+Can either collaborate by adding member to repository (then they can ssh for pull and push every time with no restrictions)
+Or person can fork which puts a copy of the repository in their GitHub and then they can ssh push pull with no restrictions to their personal repository. To put their changes into original repository have to do a pull request.
 \url{https://www.r-bloggers.com/rstudio-pushing-to-github-with-ssh-authentication/}
 \url{https://help.github.com/articles/fork-a-repo/}
 \url{https://www.r-bloggers.com/rstudio-and-github/}
