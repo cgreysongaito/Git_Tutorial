@@ -3,11 +3,10 @@
 .RData
 .Ruserdata
 *.aux
-*.pdf
 *.bbl
 *.blg
 *.log
 *.gz
 *.out
+doc/rstudiogit_tutorial_Chrisnotes.pdf
 doc/rstudiogit_tutorial_Chrisnotes.tex
-!doc/rsudiogit_tutorial.pdf
