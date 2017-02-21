@@ -176,13 +176,13 @@ science!).
     https://github.com/cgreysongaito/RUserGroup\_Git)
 
 3.  In RStudio, click on Tools -> Shell and type in the Shell
-    git remote add origin <url you just copied (without the <>)>
+    git remote add origin &lt;url you just copied (without the &lt;>)>
     and press enter
 
 4.  Back in GitHub, click on “Clone or download" and copy the text.
 
 5.  Now in the RStudio shell type git config remote.origin.url &lt;text
-    you just copied (without the <>)> and press enter
+    you just copied (without the &lt;>)> and press enter
 
 6.  Now push your repository to GitHub.
 
@@ -195,7 +195,7 @@ To add a version number:
 
 1.  Open the R project that you want to publish
 
-2.  Click on Tools -> Shell and type git tag -a <version
+2.  Click on Tools -> Shell and type git tag -a &lt;version
     number here> -m “any message here"
 
 3.  Push your repository to GitHub using RStudio
