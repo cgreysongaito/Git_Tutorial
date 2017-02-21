@@ -181,7 +181,7 @@ science!).
 
 4.  Back in GitHub, click on “Clone or download" and copy the text.
 
-5.  Now in the RStudio shell type git config remote.origin.url <text
+5.  Now in the RStudio shell type git config remote.origin.url &lt;text
     you just copied (without the <>)> and press enter
 
 6.  Now push your repository to GitHub.
