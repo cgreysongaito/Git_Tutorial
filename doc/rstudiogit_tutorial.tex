@@ -1,5 +1,5 @@
 \documentclass[12pt,letterpaper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
-\usepackage[left=0.1cm,top=0.1cm,right=0.1cm,bottom=0.35cm,nohead,nofoot]{geometry}
+\usepackage[left=1cm,top=1cm,right=1cm,bottom=1cm,nohead,nofoot]{geometry}
 \usepackage{times}
 \usepackage{hyperref}
 \begin{document}
@@ -10,7 +10,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%CLASS LECTURE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Prerequisites}
 \begin{itemize}
-\item Install Git (\href{https://git-scm.com/download/win}{Windows}, \href{https://git-scm.com/download/mac}{Mac}, \href{https://git-scm.com/download/linux}{Linux}
+\item Install Git (\href{https://git-scm.com/download/win}{Windows}, \href{https://git-scm.com/download/mac}{Mac}, \href{https://git-scm.com/download/linux}{Linux})
 \item Register for \href{https://github.com/join?source=header-home}{GitHub}
 \end{itemize}
 \section*{Benefits of Git and GitHub}
@@ -19,14 +19,15 @@
 \begin{itemize}
 \item Version Control your R scripts and your manuscripts
 \begin{itemize}
-\item No more saving your R scripts or your manuscripts with dates or version numbers at the end
-\item Can easily go back and forth between different edits
-\item All edits are kept and easily accessible but do not take up much data on your computer
+\item All of your edits are saved and so you can go back to any edit that you have made
+\item Collaborating is very easy with git and GitHub and all of the edits made by contributors can be seen
+\item You can tag different versions and easily go back to a previous version
+\item You can experiment with your coding without worrying about breaking the original code
 \end{itemize}
 \end{itemize}
 \item \textbf{GitHub}
 \begin{itemize}
-\item Publish your R scripts for your published papers
+\item Publish your R scripts for your published papers (see \href{https://github.com/Monsauce/Food-web-modules-and-individual-growth-rate}{Monica Granados R script for published paper} for an example)
 \item Collaboration
 \begin{itemize}
 \item If there is useful code already written, you can copy it using GitHub and use it (as long as you cite it)
@@ -41,37 +42,99 @@ To explore Git we will go through \href{https://try.github.io/levels/1/challenge
 Other useful webpages on how git works:
 
 \url{http://r-bio.github.io/intro-git-rstudio/}
+
 \url{https://www.git-tower.com/blog/workflow-of-version-control}
+
 \url{http://nyuccl.org/pages/gittutorial/}
 
 
 \section*{Using Rstudio with Git}
-\begin{itemize}
-\item Click on Tools -> Global Options -> Git/SVN
+\begin{enumerate}
+\item If you haven't already, install \href{https://git-scm.com/download/}{Git}
+\item In RStudio, click on Tools $\rightarrow$ Global Options $\rightarrow$ Git/SVN
+\item Check the ``Enable version control interface for RStudio projects" button
+\item Ensure that the Git executable box contains the correct path to the Git executable on your computer and ensure the box ``Use Git Bash as shell for Git projects" is checked.
+\item Click on Create RSA key (we will return to this key later). Now close the Options box.
 \item Create a project (with the following folders: R/ figs/ doc/ data/). Also create a new R script in the R folder of the project.
-\item In Project Options -> Git/SVN - select Git in the Version Control system (click yes to both)
-\item Edit the R script
-\item O
-\item Click on the Git button and then click on Commit (what about the stuff want to ignore)
-\item Click on .gitignore and then Ignore button to edit the .gitignore file
-\end{itemize}
+\item In Project Options $\rightarrow$ Git/SVN $\rightarrow$ select Git in the Version Control system (click yes to both)
+\item Edit the R script and save the file
+\item Create a textfile (in RStudio) and add the following text $\rightarrow$ figs/ doc/ data/ . Save this file as .gitignore (solely .gitignore, no text in front of the .) in your project folder (i.e in the same place as the .proj file).
+\item Click on the Git button and then click on Commit
+\item Check the boxes under ``Staged". This is the same as ``git add filename".
+\item Write a message in the ``Commit message" box and then click on the Commit button. This is the same as ``git -m ``commit message" ".
+\end{enumerate}
 
-Tags (for publishing r scripts)
-In shell/terminal write git tag -a "version number here" -m "any message here"
-Will need to push the original commit first then you have to push the tag. (Rstudio does not push the tag by default). To push the tag type in the shell/terminal git push origin version number here (for a specific tag) or git push origin --tags (for all of your tags.
-\url{https://git-scm.com/book/en/v2/Git-Basics-Tagging}
+Useful Websites:
+
 \url{https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN}
+
 \url{https://support.rstudio.com/hc/en-us/articles/200526207}
+
 \url{https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html}
 
 
+
 \section*{Collaborative R Scripts using GitHub}
-Can either collaborate by adding member to repository (then they can ssh for pull and push every time with no restrictions)
-Or person can fork which puts a copy of the repository in their GitHub and then they can ssh push pull with no restrictions to their personal repository. To put their changes into original repository have to do a pull request.
+There are two methods for collaboration in GitHub (forking/issue pull request method and the add collaborator method). In this tutorial we will use the add collaborator method.
+
+\begin{enumerate}
+\item If you haven't already sign up to \href{https://github.com/join?source=header-home}{GitHub}
+\item Remember that SSH RSA key, we need to use this for GitHub. In RStudio, click on Tools $\rightarrow$ Global Options $\rightarrow$ Git/SVN $\rightarrow$ "View public key"
+\item Copy the text of the public key.
+\item In your GitHub login, click on the top right menu button and then click on ``Settings". Now click on ``SSH and GPG keys". Click on ``New SSH key" and paste your public key (what you just copied) into the ``Key" box and give it a title. Click on ``Add SSH key".
+\item Give Chris your GitHub username and he will invite you to collaborate on a project
+\item After accepting the invite, open the RUserGroup\_Git repository and click on the ``Clone or download" button.
+\item Copy the text that appears (i.e. git\@github.com:cgreysongaito/RUserGroup\_Git.git).
+\item In RStudio, click on New Project $\rightarrow$ Version Control $\rightarrow$ Git
+\item Paste the text you just copied into ``Repository URL" and give the Project directory name as RUserGroup\_Git. For the third box, place this repository in a location that makes sense for you.
+\item Open R/CollabScript.r, add some R code (anything) and save the r script.
+\item Now, add and commit your changes (the same method as above).
+\item Click on the Git button and click on ``Push branch" and enter your password for your SSH key.
+\item If someone else has made a change to the R script and you want the most recent script on your computer, instead click on ``Pull branch".
+\end{enumerate}
+
+For the fork/issue pull request, the basic idea is that you put a local version of someone's project onto your GitHub system (this is forking, but any changes you make to this local version can not be pushed to the original project). If you want the original project to have your changes you issue a pull request and the original project owner decides whether or not to incorporate your changes. For more information see \href{https://help.github.com/articles/fork-a-repo/}{Git Fork} and \href{http://r-bio.github.io/intro-git-rstudio/}{RStudio Git Intro}.
+
+\section*{R scripts on GitHub for published papers (your homework :) )}
+Before you send your manuscript to a journal, your r script should be published. The great thing about git and GitHub is that if your reviewers want changes to your analysis, you can change your r script and republish it and people can see those changes (open and transparent science!).
+\begin{enumerate}
+\item When your r script is ready (and you have just done your final commit to your local repository), login to GitHub and create a new repository (by clicking on Repositories and New).
+\item Copy the url of the webpage of your repository (e.g https://github.com/cgreysongaito/RUserGroup\_Git)
+\item In RStudio, click on Tools $\rightarrow$ Shell and type in the Shell git remote add origin $<$url you just copied (without the $<$$>$)$>$ and press enter
+\item Back in GitHub, click on ``Clone or download" and copy the text.
+\item Now in the RStudio shell type git config remote.origin.url $<$text you just copied (without the $<$$>$)$>$ and press enter
+\item Now push your repository to GitHub.
+\end{enumerate}
+
+You have now published your R script. A nice feature of git is to tag a commit with a version number. This is useful for reviewers and other people to see where your different versions are (and in your citation for the published r script you can give a version number).
+
+To add a version number:
+\begin{enumerate}
+\item Open the R project that you want to publish
+\item Click on Tools $\rightarrow$ Shell and type git tag -a $<$version number$>$ here -m ``any message here"
+\item Push your repository to GitHub using RStudio
+\item Unfortunately, RStudio does not automatically push tags. Therefore, in the shell type git push origin $--$tags
+\end{enumerate}
+
+More information on tagging can be found \href{https://git-scm.com/book/en/v2/Git-Basics-Tagging}{here}.
+
+\vspace{0.8cm}
+
+Other useful links for RStudio and GitHub:
+
 \url{https://www.r-bloggers.com/rstudio-pushing-to-github-with-ssh-authentication/}
-\url{https://help.github.com/articles/fork-a-repo/}
+
 \url{https://www.r-bloggers.com/rstudio-and-github/}
-\section*{Need to work on}
-gitignore
+
+\section*{Licenses}
+It is very important that you include a license for anything you publish on GitHub (to protect yourself and to help people understand what they can and not use). Your best bet is probably to use a \href{https://creativecommons.org/licenses/by-sa/3.0/deed.en}{Creative Commons Attribution Share-Alike license}.
+
+Here are a few links to help you choose a license and to put the license into your GitHub repository.
+
+\url{https://choosealicense.com/}
+
+\url{https://help.github.com/articles/licensing-a-repository/}
+
+\url{https://creativecommons.org/licenses/}
 
 \end{document}
