@@ -8,5 +8,5 @@
 *.log
 *.gz
 *.out
-doc/rstudiogit_tutorial_Chrisnotes.pdf
+*.pdf
 doc/rstudiogit_tutorial_Chrisnotes.tex
