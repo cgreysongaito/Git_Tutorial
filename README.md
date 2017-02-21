@@ -1,4 +1,4 @@
-Prerequisites {#prerequisites .unnumbered}
+Prerequisites
 =============
 
 -   Install Git ([Windows](https://git-scm.com/download/win),
@@ -7,7 +7,7 @@ Prerequisites {#prerequisites .unnumbered}
 
 -   Register for [GitHub](https://github.com/join?source=header-home)
 
-Benefits of Git and GitHub {#benefits-of-git-and-github .unnumbered}
+Benefits of Git and GitHub
 ==========================
 
 -   **Git**
@@ -41,7 +41,7 @@ Benefits of Git and GitHub {#benefits-of-git-and-github .unnumbered}
         -   Can collaborate with fellow scientists on R scripts or on
             manuscripts (doable with .docx, easier with .tex/.md)
 
-Basics of Git (Conceptual) {#basics-of-git-conceptual .unnumbered}
+Basics of Git (Conceptual)
 ==========================
 
 To explore Git we will go through
@@ -55,13 +55,13 @@ Other useful webpages on how git works:
 
 <http://nyuccl.org/pages/gittutorial/>
 
-Using Rstudio with Git {#using-rstudio-with-git .unnumbered}
+Using Rstudio with Git
 ======================
 
 1.  If you haven’t already, install [Git](https://git-scm.com/download/)
 
-2.  In RStudio, click on Tools $\rightarrow$ Global Options
-    $\rightarrow$ Git/SVN
+2.  In RStudio, click on Tools -> Global Options
+    -> Git/SVN
 
 3.  Check the “Enable version control interface for RStudio projects"
     button
@@ -76,13 +76,13 @@ Using Rstudio with Git {#using-rstudio-with-git .unnumbered}
 6.  Create a project (with the following folders: R/ figs/ doc/ data/).
     Also create a new R script in the R folder of the project.
 
-7.  In Project Options $\rightarrow$ Git/SVN $\rightarrow$ select Git in
+7.  In Project Options -> Git/SVN -> select Git in
     the Version Control system (click yes to both)
 
 8.  Edit the R script and save the file
 
 9.  Create a textfile (in RStudio) and add the following text
-    $\rightarrow$ figs/ doc/ data/ . Save this file as .gitignore
+    -> figs/ doc/ data/ . Save this file as .gitignore
     (solely .gitignore, no text in front of the .) in your project
     folder (i.e in the same place as the .proj file).
 
@@ -102,7 +102,7 @@ Useful Websites:
 
 <https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html>
 
-Collaborative R Scripts using GitHub {#collaborative-r-scripts-using-github .unnumbered}
+Collaborative R Scripts using GitHub
 ====================================
 
 There are two methods for collaboration in GitHub (forking/issue pull
@@ -113,8 +113,8 @@ will use the add collaborator method.
     [GitHub](https://github.com/join?source=header-home)
 
 2.  Remember that SSH RSA key, we need to use this for GitHub. In
-    RStudio, click on Tools $\rightarrow$ Global Options $\rightarrow$
-    Git/SVN $\rightarrow$ “View public key”
+    RStudio, click on Tools -> Global Options ->
+    Git/SVN -> “View public key”
 
 3.  Copy the text of the public key.
 
@@ -132,8 +132,8 @@ will use the add collaborator method.
 7.  Copy the text that appears (i.e.
     gitgithub.com:cgreysongaito/RUserGroup\_Git.git).
 
-8.  In RStudio, click on New Project $\rightarrow$ Version Control
-    $\rightarrow$ Git
+8.  In RStudio, click on New Project -> Version Control
+    -> Git
 
 9.  Paste the text you just copied into “Repository URL" and give the
     Project directory name as RUserGroup\_Git. For the third box, place
@@ -159,7 +159,7 @@ or not to incorporate your changes. For more information see [Git
 Fork](https://help.github.com/articles/fork-a-repo/) and [RStudio Git
 Intro](http://r-bio.github.io/intro-git-rstudio/).
 
-R scripts on GitHub for published papers (your homework :) ) {#r-scripts-on-github-for-published-papers-your-homework .unnumbered}
+R scripts on GitHub for published papers (your homework :) )
 ============================================================
 
 Before you send your manuscript to a journal, your r script should be
@@ -175,14 +175,14 @@ science!).
 2.  Copy the url of the webpage of your repository (e.g
     https://github.com/cgreysongaito/RUserGroup\_Git)
 
-3.  In RStudio, click on Tools $\rightarrow$ Shell and type in the Shell
-    git remote add origin $<$url you just copied (without the $<$$>$)$>$
+3.  In RStudio, click on Tools -> Shell and type in the Shell
+    git remote add origin <url you just copied (without the <>)>
     and press enter
 
 4.  Back in GitHub, click on “Clone or download" and copy the text.
 
-5.  Now in the RStudio shell type git config remote.origin.url $<$text
-    you just copied (without the $<$$>$)$>$ and press enter
+5.  Now in the RStudio shell type git config remote.origin.url <text
+    you just copied (without the <>)> and press enter
 
 6.  Now push your repository to GitHub.
 
@@ -195,13 +195,13 @@ To add a version number:
 
 1.  Open the R project that you want to publish
 
-2.  Click on Tools $\rightarrow$ Shell and type git tag -a $<$version
-    number$>$ here -m “any message here"
+2.  Click on Tools -> Shell and type git tag -a <version
+    number here> -m “any message here"
 
 3.  Push your repository to GitHub using RStudio
 
 4.  Unfortunately, RStudio does not automatically push tags. Therefore,
-    in the shell type git push origin $--$tags
+    in the shell type git push origin --tags
 
 More information on tagging can be found
 [here](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
@@ -212,7 +212,7 @@ Other useful links for RStudio and GitHub:
 
 <https://www.r-bloggers.com/rstudio-and-github/>
 
-Licenses {#licenses .unnumbered}
+Licenses
 ========
 
 It is very important that you include a license for anything you publish
