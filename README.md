@@ -178,11 +178,11 @@ science!).
 7.  Copy the text that appears (e.g
     gitgithub.com:cgreysongaito/RUserGroup\_Git.git).
 
-3.  In RStudio, click on Tools -> Shell and type in the Shell
+3.  In RStudio, click on Tools -> Shell and type in the Shell:
     git remote add origin &lt;text you just copied (without the &lt;>)>
     and press enter
 
-4.  Now type: git pull origin master --allow-unrelated-histories (and press enter). NOTE Never use the option --allow-unrelated-histories unless you are merging a new and completely empty except a license) GitHub repository with your local repository. This option is a dangerous option if used without care.
+4.  Now type: git pull origin master --allow-unrelated-histories (and press enter). NOTE Never use the option --allow-unrelated-histories unless you are merging a new and completely empty (except for a license) GitHub repository with your local repository. This option is a dangerous option if used without care.
 
 5.  Now type: git push -u origin master (You must do these pulls and pushes in the shell first before using the RStudio git buttons. This is because RStudio at first can not pull or push your work. What you entered into the shell now allows RStudio to push and pull.)
 
@@ -195,7 +195,7 @@ To add a version number:
 
 1.  Open the R project that you want to publish
 
-2.  Click on Tools -> Shell and type git tag -a &lt;version
+2.  Click on Tools -> Shell and type: git tag -a &lt;version
     number here> -m “any message here"
 
 3.  Push your repository to GitHub using RStudio
