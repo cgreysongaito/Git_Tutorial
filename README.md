@@ -65,8 +65,6 @@ Using Rstudio with Git
 
 1.  If you haven’t already, install [Git](https://git-scm.com/download/)
 
-Set config
-
 2.  In RStudio, click on Tools -> Global Options
     -> Git/SVN
 
@@ -79,22 +77,24 @@ Set config
 
 5.  Click on Create RSA key (we will return to this key later). Close the Options box.
 
-6.  Create a project (with the following folders: R/ figs/ doc/ data/).
+6.  We need to tell Git (the program) who you are. To do this In RStudio click Tools -> Shell and type: git config --global user.name "yourname" and press enter. Now type git config --global user.email "youremail" and press enter.
+
+7.  Create a project (with the following folders: R/ figs/ doc/ data/).
     Also create a new R script in the R folder of the project.
 
-7.  In Project Options -> Git/SVN -> select Git in
+8.  In Project Options -> Git/SVN -> select Git in
     the Version Control system (click yes to both). This is the same as "git init".
 
-8.  Edit the R script and save the file
+9.  Edit the R script and save the file
 
-9.  In RStudio, open the file ".gitignore" (it is in your project folder) and add the following text: figs/ doc/ data/ . Save this file.
+10.  In RStudio, open the file ".gitignore" (it is in your project folder) and add the following text: figs/ doc/ data/ . Save this file.
 
-10. Click on the Git button and then click on Commit
+11. Click on the Git button and then click on Commit
 
-11. Check the boxes under “Staged". This is the same as “git add
+12. Check the boxes under “Staged". This is the same as “git add
     filename".
 
-12. Write a message in the “Commit message" box and then click on the
+13. Write a message in the “Commit message" box and then click on the
     Commit button. This is the same as “git commit -m “commit message“ ”.
 
 Useful Websites:
@@ -182,7 +182,7 @@ science!).
     git remote add origin &lt;text you just copied (without the &lt;>)>
     and press enter
 
-4.  Now type: git pull origin master --allow-unrelated-histories (and press enter)
+4.  Now type: git pull origin master --allow-unrelated-histories (and press enter). NOTE Never use the option --allow-unrelated-histories unless you are merging a new and completely empty except a license) GitHub repository with your local repository. This option is a dangerous option if used without care.
 
 5.  Now type: git push -u origin master (You must do these pulls and pushes in the shell first before using the RStudio git buttons. This is because RStudio at first can not pull or push your work. What you entered into the shell now allows RStudio to push and pull.)
 
@@ -208,9 +208,9 @@ More information on tagging can be found
 
 Other useful links for RStudio and GitHub:
 
-<https://www.r-bloggers.com/rstudio-pushing-to-github-with-ssh-authentication/>
+[Using SSH with RStudio and GitHUb](https://www.r-bloggers.com/rstudio-pushing-to-github-with-ssh-authentication/)
 
-<https://www.r-bloggers.com/rstudio-and-github/>
+[RStudio and GitHub](https://www.r-bloggers.com/rstudio-and-github/)
 
 Licenses
 ========
@@ -224,8 +224,8 @@ license](https://creativecommons.org/licenses/by-sa/3.0/deed.en).
 Here are a few links to help you choose a license and to put the license
 into your GitHub repository.
 
-<https://choosealicense.com/>
+[Choose A License](https://choosealicense.com/)
 
-<https://help.github.com/articles/licensing-a-repository/>
+[GitHub Help: Licensing a Repository](https://help.github.com/articles/licensing-a-repository/)
 
-<https://creativecommons.org/licenses/>
+[Creative Commons Licenses](https://creativecommons.org/licenses/)
