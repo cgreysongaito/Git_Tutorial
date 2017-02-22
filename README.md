@@ -95,7 +95,7 @@ Set config
     filename".
 
 12. Write a message in the “Commit message" box and then click on the
-    Commit button. This is the same as “git -m “commit message“ ”.
+    Commit button. This is the same as “git commit -m “commit message“ ”.
 
 Useful Websites:
 
