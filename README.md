@@ -229,3 +229,14 @@ into your GitHub repository.
 [GitHub Help: Licensing a Repository](https://help.github.com/articles/licensing-a-repository/)
 
 [Creative Commons Licenses](https://creativecommons.org/licenses/)
+
+Other Ways to Use Git
+========
+
+- *Graphical Git Client*
+  - [Git Tower](https://www.git-tower.com/)
+  - [Tortoise Git](https://tortoisegit.org/)
+  - [GitKraken](https://www.gitkraken.com/)
+  
+- *The Command Line*
+  - [Git Manual](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
