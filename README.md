@@ -233,10 +233,10 @@ into your GitHub repository.
 Other Ways to Use Git
 ========
 
-- *Graphical Git Client*
+- **Graphical Git Client**
   - [Git Tower](https://www.git-tower.com/)
   - [Tortoise Git](https://tortoisegit.org/)
   - [GitKraken](https://www.gitkraken.com/)
   
-- *The Command Line*
+- **The Command Line**
   - [Git Manual](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
