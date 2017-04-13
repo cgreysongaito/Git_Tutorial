@@ -60,6 +60,8 @@ Other useful webpages on how git works:
 
 [Git Tutorial](http://nyuccl.org/pages/gittutorial/)
 
+[Git and R](https://nicercode.github.io/git/)
+
 Using Rstudio with Git
 ======================
 
