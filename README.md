@@ -1,6 +1,6 @@
 Git and GitHub with Rstudio
 =============
-
+Alexa Scott
 This repository was created for a tutorial provided by Christopher J. Greyson-Gaito for the R User Group in the Integrative Biology department of the University of Guelph. The text below is the guide for the tutorial.
 
 Prerequisites
