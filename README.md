@@ -1,8 +1,6 @@
 Git and GitHub with Rstudio
 =============
-Alexa Scott Bananas
-Charlotte
-Hey everyone
+
 This repository was created for a tutorial provided by Christopher J. Greyson-Gaito for the R User Group in the Integrative Biology department of the University of Guelph. The text below is the guide for the tutorial.
 
 Prerequisites
@@ -64,105 +62,13 @@ Other useful webpages on how git works:
 
 [Git and R](https://nicercode.github.io/git/)
 
-Using Rstudio with Git
-======================
-
-1.  If you haven’t already, install [Git](https://git-scm.com/download/)
-
-2.  In RStudio, click on Tools -> Global Options
-    -> Git/SVN
-
-3.  Check the “Enable version control interface for RStudio projects"
-    button
-
-4.  Ensure that the Git executable box contains the correct path to the
-    Git executable on your computer and ensure the box “Use Git Bash as
-    shell for Git projects" is checked.
-
-5.  Click on Create RSA key (we will return to this key later). Close the Options box.
-
-6.  We need to tell Git (the program) who you are. To do this In RStudio click Tools -> Shell and type: git config --global user.name "yourname" and press enter. Now type git config --global user.email "youremail" and press enter.
-
-7.  Create a project (with the following folders: R/ figs/ doc/ data/).
-    Also create a new R script in the R folder of the project.
-
-8.  In Project Options -> Git/SVN -> select Git in
-    the Version Control system (click yes to both). This is the same as "git init".
-
-9.  Edit the R script and save the file
-
-10.  In RStudio, open the file ".gitignore" (it is in your project folder) and add the following text: figs/ doc/ data/ . Save this file.
-
-11. Click on the Git button and then click on Commit
-
-12. Check the boxes under “Staged". This is the same as “git add
-    filename".
-
-13. Write a message in the “Commit message" box and then click on the
-    Commit button. This is the same as “git commit -m “commit message“ ”.
-
-Useful Websites:
-
-[RStudio Support: Version Control with Git](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
-
-[Using Git with RStudio and the Command Line](https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html)
-
-Collaborative R Scripts using GitHub
-====================================
-
-There are two methods for collaboration in GitHub (the forking/issue pull
-request method and the add collaborator method). In this tutorial we
-will use the add collaborator method.
-
-1.  If you haven’t already sign up to
-    [GitHub](https://github.com/join?source=header-home)
-
-2.  Remember that SSH RSA key, we need to use this for GitHub. In
-    RStudio, click on Tools -> Global Options ->
-    Git/SVN -> “View public key”
-
-3.  Copy the text of the public key.
-
-4.  In your GitHub login, click on the top right menu button and then
-    click on “Settings". Now click on “SSH and GPG keys". Click on “New
-    SSH key" and paste your public key (what you just copied) into the
-    “Key" box and give it a title. Click on “Add SSH key".
-
-5.  Give Chris your GitHub username and he will invite you to
-    collaborate on a project
-
-6.  After accepting the invite, open the RUserGroup\_Git repository in GitHub and
-    click on the “Clone or download" button. Ensure that the box that appears has the title "Clone with SSH". If the box does not say this then click on "Use SSH".
-
-7.  Copy the text that appears (i.e.
-    gitgithub.com:cgreysongaito/RUserGroup\_Git.git).
-
-8.  In RStudio, click on New Project -> Version Control
-    -> Git
-
-9.  Paste the text you just copied into “Repository URL" and make the
-    Project Directory Name: RUserGroup\_Git. For the third box, place
-    this repository in a location that makes sense for you.
-
-10. Open R/CollabScript.r, add some R code (anything) and save the r
-    script.
-
-11. Now, add and commit your changes (the same method as above).
-
-12. Click on the Git button and click on “Push branch" and enter your
-    password for your SSH key.
-
-13. If someone else has made a change to the R script and you want the
-    most recent script on your computer, instead click on “Pull branch".
-
-For the fork/issue pull request method, the basic idea is that you put a local
-version of someone’s project onto your GitHub system (this is forking,
-but any changes you make to this local version can not be pushed to the
-original project). If you want the original project to have your changes
-you issue a pull request and the original project owner decides whether
-or not to incorporate your changes. For more information see [Git
-Fork](https://help.github.com/articles/fork-a-repo/), [Syncing a fork](https://help.github.com/articles/syncing-a-fork/) and [RStudio Git
-Intro](http://r-bio.github.io/intro-git-rstudio/).
+- **Graphical Git Client**
+  - [Git Tower](https://www.git-tower.com/)
+  - [Tortoise Git](https://tortoisegit.org/)
+  - [GitKraken](https://www.gitkraken.com/)
+  
+- **The Command Line**
+  - [Git Manual](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 
 R scripts on GitHub for published papers (your homework :) )
 ============================================================
@@ -234,13 +140,3 @@ into your GitHub repository.
 
 [Creative Commons Licenses](https://creativecommons.org/licenses/)
 
-Other Ways to Use Git
-========
-
-- **Graphical Git Client**
-  - [Git Tower](https://www.git-tower.com/)
-  - [Tortoise Git](https://tortoisegit.org/)
-  - [GitKraken](https://www.gitkraken.com/)
-  
-- **The Command Line**
-  - [Git Manual](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
